@@ -1,7 +1,9 @@
 {
     "name": "alexey-kupershtokh/location-bundle",
     "require": {
-        "guzzlehttp/guzzle": "~6.0"
+        "guzzlehttp/guzzle": "~6.0",
+        "phpunit/phpunit": "^4.8",
+        "symfony/options-resolver": "^3.0"
     },
     "require-dev": {
         "symfony/framework-bundle": "^3.0",
@@ -15,6 +17,6 @@
         }
     ],
     "autoload": {
-        "psr-4": { "AlexeyKuperhtokh\\LocationBundle\\": "" }
+        "psr-4": { "AlexeyKuperhstokh\\LocationBundle\\": "" }
     }
 }
