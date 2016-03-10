@@ -13,5 +13,8 @@
             "name": "Alexey Kupershtokh",
             "email": "alexey.kupershtokh@gmail.com"
         }
-    ]
+    ],
+    "autoload": {
+        "psr-4": { "AlexeyKuperhtokh\\LocationBundle\\": "" }
+    }
 }
