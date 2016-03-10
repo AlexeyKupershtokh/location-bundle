@@ -11,7 +11,7 @@ services:
         class: %location_bundle.request.class%
         arguments:
             - %location_bundle.request.method%
-            - @location_bundle.uri
+            - '@location_bundle.uri'
     location_bundle.uri:
         class: %location_bundle.uri.class%
         arguments:
@@ -21,5 +21,5 @@ services:
     location_bundle.client:
         class: %location_bundle.client.class%
         arguments:
-            - @location_bundle.http_client
-            - @location_bundle.request
+            - '@location_bundle.http_client'
+            - '@location_bundle.request'
