@@ -3,7 +3,8 @@
     "require": {
         "guzzlehttp/guzzle": "~6.0",
         "phpunit/phpunit": "^4.8",
-        "symfony/options-resolver": "^3.0"
+        "symfony/options-resolver": "^3.0",
+        "symfony/serializer": "^3.0"
     },
     "require-dev": {
         "symfony/framework-bundle": "^3.0",
