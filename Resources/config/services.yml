@@ -1,0 +1,25 @@
+parameters:
+    location_bundle.uri.class: GuzzleHttp\Psr7\Uri
+    location_bundle.request.class: GuzzleHttp\Psr7\Request
+    location_bundle.http_client.class: GuzzleHttp\Client
+    location_bundle.client.class: AlexeyKuperhstokh\LocationBundle\Client\Client
+    location_bundle.request.method: GET
+    location_bundle.request.uri: http://localhost/
+
+services:
+    location_bundle.request:
+        class: %location_bundle.request.class%
+        arguments:
+            - %location_bundle.request.method%
+            - @location_bundle.uri
+    location_bundle.uri:
+        class: %location_bundle.uri.class%
+        arguments:
+            - %location_bundle.request.uri%
+    location_bundle.http_client:
+        class: %location_bundle.http_client.class%
+    location_bundle.client:
+        class: %location_bundle.client.class%
+        arguments:
+            - @location_bundle.http_client
+            - @location_bundle.request
