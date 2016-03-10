@@ -1,0 +1,17 @@
+{
+    "name": "alexey-kupershtokh/location-bundle",
+    "require": {
+        "guzzlehttp/guzzle": "~6.0"
+    },
+    "require-dev": {
+        "symfony/framework-bundle": "^3.0",
+        "satooshi/php-coveralls": "^1.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alexey Kupershtokh",
+            "email": "alexey.kupershtokh@gmail.com"
+        }
+    ]
+}
